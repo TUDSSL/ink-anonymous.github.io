@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrInK-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <lInK rel="icon" href="../../../../favicon.ico"> -->
+
+   <title>Reactive kernel for intermittent systems</title>
+
+    <!-- Bootstrap core CSS -->
+    <lInK rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    
+    <!-- Custom styles for this template -->
+    <lInK href="jumbotron.css" rel="stylesheet">
+  </head>
+
+  <body>
+  
+  <main role="main">
+
+<!--   <div class="header">
+<div class="container">
+    <ul class="nav nav-pills pull-right">
+      <li><a href="#">Home  </a></li>
+      <li><a href="#download">Kernel  </a></li>
+      <li><a href="#applications">Applications  </a></li>
+      <li><a href="#robot">Intermittent Robot  </a></li>
+      <li><a href="#evaluation_data">Evaluation Data  </a></li>
+      <li><a href="#study">User Study  </a></li>
+    </ul>
+  </div>
+</div>
+ -->      
+
+ <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3">InK</h1>
+          <p>InK is a kernel designed to allow intermittent devices to operate reactively to their deployed environments.
+          By exploiting interrupts, timers and priority based scheduling scavenged energy can be used to perform actions in a manner relative to 
+          users needs, effectively reducing irrelevant computation and increasing the responsiveness of the system to external events.</p>
+
+          <p> <em>The current page is intended for the review process and fully anonymized. After the review process the website and the code will become publicly available and un-anonymized.
+          </em></p>
+
+          <div style="text-align: center">    
+            <img src="flow-1.png" width="800px" onerror="this.src=img/oversubscribed.    png" alt="" width="350px" style="margin:10px;">
+            <img src="img/allocation.svg" onerror="this.src=img/allocation.png"   alt=""       width="350px" style="margin:10px;">
+          </div>
+              
+          <p><a class="btn btn-primary btn-lg" href="#" role="button">Read Paper</a></p>
+          <a class="btn btn-primary btn-lg" href="#download" role="button">Get Code</a>
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- Example row of columns -->
+          <div class="col">
+          <h1>Download</h1>
+            <p>Clone <a href="https://github.com/InK-anonymous/InK-anonymous.github.io.git">InK git repository</a>:
+            <pre>git clone https://github.com/InK-anonymous/InK-anonymous.github.io.git</pre></p>
+          <h4>More info:</h4>
+          <ul>
+            <li>
+              InK has no dependencies from external libraries. It is developed and tested on MSP430FR5994 lauchpad.
+              As a result the kernel is out of box working with platforms respecting the architecture MSPFR59xx family.
+              If you want to use on different hardware (which supports non-volatile memory), modifications will be needed in 
+              files contained under mcu folder.
+            </li>
+            <li>
+              InK can be imported as a CCS project and edited under CCStudio.
+            </li>
+          </ul>
+          </div>
+        <hr>
+      </div> <!-- /container -->
+      <div class="container">
+        <!-- Example row of columns -->
+          <div class="col">
+              <h1>Applications</h1>
+          </div>
+            <ul>
+              <li>
+                 A set of applications designed on InK can be accessed at <a href="http://robotoffice.mit.edu/2014/no-wait-data-centers-0717">the corresponding directory</a>.
+                 These can be used as a guide through the process of designing applications using InK or used to evaluate the performance and features provided by the kernel.
+              </li>
+              <li>
+                 The applications are importable as CCS projects for easy deployment and compilation.
+               </li> 
+            </ul>
+      <hr>
+      </div> <!-- /container -->
+      <div class="container">
+        <!-- Example row of columns -->
+          <div class="col">
+            <h1>Intermittent Robot</h1>
+          </div>
+          <ul>
+          <li>
+            Our intermittent-robot is open-sourced both in software and hardware. You can find code as well as schematics in our <a href="http://robotoffice.mit.edu/2014/no-wait-data-centers-0717">repository</a>.
+          </li>
+          <hr>
+
+      </div> <!-- /container -->
+
+      <div class="container">
+        <!-- Example row of columns -->
+          <div class="col">
+              <h1>Evaluation Data</h1>  
+           </div>    
+        <ul>
+          During our evaluation of InK's capabilities we employed a series of tests under various conditions. Being aware of the scarcity of
+          evaluation data in the intermittent domain we open-sourced our data hoping that more people will contribute in our cause of increasing 
+          the availability of tools and information of transiently powered devices. The data and tools used can be found on our <a href="http://robotoffice.mit.edu/2014/no-wait-data-centers-0717">repository</a>.
+        </ul>
+      <hr>
+
+      </div> <!-- /container -->
+
+      <div class="container">
+        <!-- Example row of columns -->
+          <div class="col">
+      <h1>User Study</h1> 
+    </div>
+    <ul> 
+      InK provides the abstractions necessary for developing application under intermittency while respecting the needs of the community for 
+      reducing development cost and relieving the developer from unnecessary complexity. In our efforts to accommodate those concerns we employed a user  
+      study to evaluate adoption to our programming model and asses the usability of InK comparing to tools currently available.
+    </ul>
+    <ul> 
+      Results and data on the user study can be found on our <a href="http://robotoffice.mit.edu/2014/no-wait-data-centers-0717">repository</a>. 
+    </ul>
+    <hr>
+
+      </div> <!-- /container -->
+
+    </main>
+
+    <footer class="container">
+      <p>Submission 2018</p>
+    </footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  </body>
+</html>
